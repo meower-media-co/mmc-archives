@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <script src="https://kit.fontawesome.com/d389583fd6.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<p id="css"><link rel='stylesheet' type='text/css' href='styles/light.css' /></p>
+    <link rel='stylesheet' type="text/css" href="styles/global.css" />
+	<title>Meower+ | A Social Media Platform that is safe for everyone!</title>
+  <!--script src="scripts/styleswitch.js" makes the page unload-->
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script> Whats socket.io (all commented bc saving on space and time)-->
+<script>
+    function lightTheme(){
+      document.getElementById("css").innerHTML = "<link rel='stylesheet' href='styles/light.css'>";
+      localStorage.setItem("meowerplus_theme", 1);
+    }
+    function darkTheme(){
+      document.getElementById("css").innerHTML = "<link rel='stylesheet' href='styles/dark.css'>";
+      localStorage.setItem("meowerplus_theme", 2);
+    }
+    var theme = localStorage.getItem("meowerplus_theme");
+    if (theme == 2) {
+        darkTheme();
+    }
+  </script>
+	</head>
+	<body>
+		<div id="navbar"> <!-- Header -->
+			
+      <a href = "//meowerplus.tk/">meower<span id="plus">+</span></a> | 
+			<a href = "//meower.tk/">meower</a> |
+			<i class="far fa-envelope"></i>
+      <a href="/messages" style="color:white"><span id="messages-count"> 10</span></a> | <button onclick="login();"><span class="username">Log in</span></button>
+			</header>
+		</div>
+		<br>
+    
+
+
+    <center> The incredible Social Media, right in your hands </p>
+    <i class="fas fa-arrow-down" style="color:grey;font-size:100px;"></i>
+		</p>
+
+    <center class="themes">
+    <button onclick="lightTheme()"> Light Mode! </button>
+    <button onclick="darkTheme()"> Dark Mode! </button>
+    </center>
+
+    <center class="testipsum"><br />
+    Made with tender love by the Meower Media team.</center><br/>
+    	<a href="/credits"><div><button>Credits</div></button></a>
+ 	<br />
+   <center>
+   <p> Chat powered by LowChat </p>
+   </center>
+   <embed src="https://meowchat.tk" style="width:500px; height: 300px;">
+   <center>
+   <p> Type /nick name for nicknames </p>
+   </center>
+    <script src="/scripts/client.js"></script>
+	</body>
+  ;
+</html>
+<!-- What is this for? -->
