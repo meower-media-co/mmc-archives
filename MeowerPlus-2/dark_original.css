@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Scratch';
+  src: url('./fonts/SCRATCHFONT.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Code';
+  src: url('./fonts/CODE.ttf') format("truetype"), url('./fonts/CODE.woff') format("woff");
+}
+
+@font-face {
+  font-family: 'Card';
+  src: url('./fonts/AVANT.otf') format('opentype')
+}
+
+* {
+  font-family: "Arial";
+  color: white;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+
+.float-right 
+  {float: right;} 
+.postbutton 
+  {height:23px; position: relative; top:-3px; border-color: rgb(0, 0, 0); background-color: #005aff; padding: 4px; line-height: 0px; box-shadow: none; margin:0px 3px;}
+.white
+  {color: black;}
+.postbutton:active 
+  {background-color: ##005aff;}
+
+.link {
+  font-size: 32px;
+}
+
+#nav {
+  background-color: #005aff;
+}
+
+#scratch {
+  font-family: 'Scratch';
+}
+
+#upper_tab {
+  background-color: #005aff;
+  color:black;
+  padding: 5px;
+}
+
+body {
+  background-color: black;
+  font-size: 16px;
+	overflow-x: hidden;
+}
+
+#blog {
+  margin-top: 60px;
+  width:50%;
+  bottom:95px;
+}
+
+#want_more {
+  position: absolute;
+  padding: 15px;
+  border-radius:2px;
+  width:40%;
+  margin-left:52%;
+}
+
+#post {
+  border: 5px solid #005aff;
+  padding: 5px;
+  border-radius:2px;
+}
+
+.logo {
+  color:black;
+  background-color:#005aff;
+  padding: 10px;
+  font-size:50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+ol.code {
+  background: rgba(221, 221, 221, 0.76);
+  display: inline-block;
+  border-radius: calc(0.35rem / 2);
+  border-bottom-right-radius: 0px;
+  padding: 10px;
+  padding-left: 15px;
+  counter-reset: item;
+  list-style-type: none;
+  border-left-style: solid;
+  border-left-color: #005aff;
+  border-width: medium;
+  line-height: 20px;
+}
+
+ol.code li { 
+  display: block;
+  color: rgb(0, 0, 0);
+  font-family: Code;
+  font-size: 25px;
+}
+ol.code li:before { 
+    content: counter(item) "  "; 
+    counter-increment: item;
+    color: #808080;
+}
+
+.card {
+  padding: 15px;
+  box-shadow: 0px 0px 4px 3px #ccc;
+  border-radius: 10px;
+  width: 200px;
+  float: left;
+  margin-left: 15px;
+}
+
+.card h3, .card p, .card button {
+  font-family: Card;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+}
+
+button {
+  font-family: Card;
+  border-radius: calc(0.5rem / 2);
+  border: solid 2px #005aff;
+  background-color: black;
+  padding: 10px;
+  padding-bottom: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+

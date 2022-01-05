@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>meower.org | Welcome to Meower Media!</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+ <div class="navbar">
+  <a href="/"><img src="/graphic/meowermedialogo.svg" width="143" length="1"></img></a>
+  <a href="/messages">Messages</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/signin">Sign In</a>
+</div>
+
+  <div class="main">
+    <br />
+    <p>Welcome to meower.org! Home to Meower, Meower Plus, Gamr, Openly, and more!</p>
+
+	  <img src="/graphic/separator.svg" /><br />
+    <button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+  </div>
+  </body>
+</html>

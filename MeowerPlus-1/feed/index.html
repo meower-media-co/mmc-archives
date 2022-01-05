@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+
+    <script src="https://kit.fontawesome.com/d389583fd6.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<p id="css"><link rel='stylesheet' type='text/css' href='/styles/light.css' /></p>
+    <link rel='stylesheet' type="text/css" href="/styles/global.css" />
+	<title>Meower+ | A Social Media Platform that is safe for everyone!</title>
+  <!--script src="scripts/styleswitch.js" makes the page unload-->
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script> Whats socket.io (all commented bc saving on space and time)-->
+<script>
+    function lightTheme(){
+      document.getElementById("css").innerHTML = "<link rel='stylesheet' href='/styles/light.css'>";
+      localStorage.setItem("meowerplus_theme", 1);
+    }
+    function darkTheme(){
+      document.getElementById("css").innerHTML = "<link rel='stylesheet' href='/styles/dark.css'>";
+      localStorage.setItem("meowerplus_theme", 2);
+    }
+    var theme = localStorage.getItem("meowerplus_theme");
+    if (theme == 2) {
+        darkTheme();
+    }
+  </script>
+	</head>
+	<body>
+		<div id="navbar"> <!-- Header -->
+			
+      <a href = "//meowerplus.tk/">meower<span id="plus">+</span></a> | 
+			<a href = "//meower.tk/">meower</a> |
+			<i class="far fa-envelope"></i>
+      <a href="/messages" style="color:white"><span id="messages-count"> 10</span></a> | <button onclick="login();"><span class="username">Log in</span></button>
+			</header>
+		</div>
+		<br>
+    <div id="thing" style="background-color:orange;color:white; padding:20px; position:relative; top:20px;">
+		<center class="main-content">
+		What's up
+    </div>
+    <br>
+
+    <script>
+     function postMSG(){
+  let liFirst = document.createElement('li');
+  liFirst.innerHTML = "<div id='post'> <button id='upv' class='cssplus-button' onclick='up()'>^</button> <button id='dov' class='cssplus-button' onclick='down()'>v</button> <h2 class='post-head'>" + document.getElementById("header").value + "</h2> </hr>" + document.getElementById("postarea").value + "</div>";
+  ol.prepend(liFirst); // insert liFirst at the beginning of <ol>
+  document.getElementById("postarea").value = "";
+     }
+      
+     function up() {
+       //do not define
+     }
+
+     function down() {
+       //do not define
+     }
+    </script>
+    <style>
+     #post{
+     background-color:hsla(0, 0%, 100%, 0.2);
+     padding:10px;
+     margin-bottom:10px;
+     border-radius:10px;
+     }
+     </style>
+    <div id="feed" style="background-color:hsla(0, 0%, 100%, 0.1); padding:10px;">
+    <ol id="ol" style="overflow: auto;  width: 80%; height: 500px;">
+     </ol>
+    </div>
+    <!--link rel="stylesheet" href="https://uploads.dabdatbass.repl.co/code/css/cssplus.css">-->
+<!-- or use our own css :/ -->
+  <input type="text" id="header" class="cssplus-input" value="Header"><br>
+  <textarea id="postarea" cols="30" rows="10" placeholder="What do you want to type in?" class="cssplus-ta"></textarea><br>
+<button id="postbutton" class="cssplus-button" onclick="postMSG()">Post</button>
+    <center> 
+
+    
+   
+    <center class="testipsum"><br />
+    Made with tender love, by the Meower Media team.</center><br />
+    	<a href="/credits"><div><button>Credits</div></button></a>
+ 	<br />
+    <script src="/scripts/client.js"></script>
+	</body>
+  ;
+</html>
