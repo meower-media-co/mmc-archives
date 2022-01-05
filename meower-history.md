@@ -1,7 +1,7 @@
 # Meower's History
 A full and detailed list of the great history of Meower (and Meower Media Co.)!
-## ATTENTION!
-This repository can only be seen by us (hooray!), so this will be maintained here: [https://meower.miraheze.org/wiki/History](https://meower.miraheze.org/wiki/History)
+## One *first* thing...
+This had been updated for mmc-archives. The original repository is now a public archive, and had been moved to Wiki Meower. The following document *also* has some changes current and old (whatever that means).
 ## Disclaimer
 Meower Media Co is merely an alias towards the collaborators of  The Meower Project, and is in no way, shape, or form, a legal entity. This project has no intentions to harass or promote hatred torwards Scratch itself, but it does bring into precedent some of it's current issues with the ST.
 ## Foreword
