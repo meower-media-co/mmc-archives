@@ -14,5 +14,3 @@ We plan on keeping true to it's origins: A completely open-source social media p
 * Scratch 3.0 - A simple, easy-to-use, block-based programming language aimed at young children.
 * CloudLink - A powerful websocket extension written for Scratch 3.0.
 * TurboWarp - For fast development times and powerful compiling.
-
-#### Archived in mmc-archives by MikeDEV - Jan 4 2022

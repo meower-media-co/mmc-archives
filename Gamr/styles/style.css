@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200');
+:root {
+	/* These are CSS variables. They can be accessed using 'var(--variable name);' */
+	--accents:  rgb(141, 197, 45);
+	--accents-transparent: rgba(150, 207, 51, 0.451); 
+	--background: whitesmoke;
+	--text: rgb(26,26,26);
+	--box-shadow: rgba(0,0,0,.25);
+	--links: rgba(122, 245, 106, 0.726);
+	--links-color-2: rgba(99, 245, 143, 0.712);
+  --button: rgb(24, 178, 255);
+  --button-2: rgb(62, 191, 255); 
+}
+.dark-mode:root {
+	--accents:  rgb(141, 197, 45);
+	--accents-transparent: rgba(150, 207, 51, 0.451); 
+	--background: #101010;
+	--text: whitesmoke;
+	--box-shadow: rgba(255,255,255,.25);
+	--links: rgba(122, 245, 106, 0.726);
+	--links-color-2: rgba(99, 245, 143, 0.712);
+  --button: rgb(24, 178, 255);
+  --button-2: rgb(62, 191, 255); 
+}
+* {
+	color: var(--text);
+	background: var(--background);
+	/* Just some initial styling to keep stuff nice. */
+	padding: none;
+	margin: none;
+}
+body, input, html, button {
+	font-family: Poppins, sans-serif;
+}
+
+.topnav {
+  clear: both;
+  overflow: hidden;
+  float: left;
+  top: 0;
+  border-radius: 0.5rem;
+  position: fixed;
+  box-shadow: 0px 0px 20px var(--box-shadow);
+  padding: 10px 20px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.topnav a {
+	margin: 5px 14px;
+	transition: background-size 0.4s ease;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	background-position: 0 88%;
+	background-image: linear-gradient(to right, var(--accents), var(--accents-transparent));
+}
+.topnav a:hover {
+	background-size: 100% 2px;
+}
+
+.content {
+  margin-top: 60px;
+	max-width: 600px;
+	/* Center the content */
+	margin: 0 auto;
+	padding: 40px;
+}
+.content a {
+	text-decoration: none;
+}
+.content a {
+	transition: background-size 0.3s ease-out;
+	background-image: linear-gradient(120deg,var(--links)  0%, var(--links-color-2) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 88%;
+}
+.content a:hover {
+	background-size: 100% 100%;
+}
+blockquote {
+  border-left: 10px solid var(--accents);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  background-color: var(--accents-transparent);
+  color: var(--text);
+  display: inline;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+blockquote:before {
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px var(--box-shadow);
+  padding: 10px 15px;
+  background: linear-gradient(120deg, var(--button), var(--button-2));
+  color: var(--text);
+  transition: font-size 0.5s ease-out;
+  font-size: 15px;
+}
+button:hover {
+  font-size: 20px;
+} 
+
+/* chat
+- Is gamr by Meower Media Co.?
+- Ummm, IDK what that is. I just clicked join team and started working on the website lol
+
+*/
