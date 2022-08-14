@@ -1,0 +1,27 @@
+{
+  "name": "@wgyt/cloudlink",
+  "version": "3.0.1",
+  "description": "A Javascript client for Cloudlink servers",
+  "keywords": [
+    "Cloudlink",
+    "Scratch"
+  ],
+  "homepage": "https://github.com/wgyt/cloudlink",
+  "bugs": "https://github.com/wgyt/cloudlink/issues",
+  "license": "MIT",
+  "author": "William Horning <wgyt735yt@gmail.com> (https://wgyt.tk)",
+  "files": [
+    "src/**/*"
+  ],
+  "main": "src/cloudlink.js",
+  "types": "src/cloudlink.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wgyt/cloudlink.git"
+  },
+  "devDependencies": {
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  }
+}
