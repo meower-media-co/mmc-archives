@@ -1,0 +1,1 @@
+console.log("%cStop!","color: #F00; font-size: 30px; -webkit-text-stroke: 1px black; font-weight:bold"),console.log("This portion of your browser is intended for developers! Do not copy and paste any code from anyone into here, because someone could log into your account!")
