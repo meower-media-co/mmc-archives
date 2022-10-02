@@ -1,0 +1,143 @@
+<script type="module">
+  window.EventEmitter = class EventEmitter {
+    constructor() {
+      this.callbacks = {}
+    }
+
+    on(event, cb) {
+      if (!this.callbacks[event]) this.callbacks[event] = [];
+      this.callbacks[event].push(cb)
+    }
+
+    emit(event, data) {
+      let cbs = this.callbacks[event]
+      if (cbs) {
+        cbs.forEach(cb => cb(data))
+      }
+    }
+  }
+  class CloudlinkJS {
+    constructor(server) {
+      var ws = new WebSocket(server);
+      var events = new EventEmitter()
+      this.events = events
+      this.ws = ws
+
+      ws.onopen = function () {
+        events.emit('opened');
+      };
+
+      ws.onmessage = function (e) {
+        let data = JSON.parse(e.data)
+        if (data.cmd === 'ds') ws.close();
+        events.emit('data', data);
+      }
+
+      ws.onclose = function () {
+        events.emit('closed');
+      };
+
+      ws.onerror = function (e) {
+        events.emit('error', e);
+      };
+    }
+      send(data) {
+        this.ws.send(JSON.stringify(data))
+      }
+      on(event, cb) {
+        return this.events.on(event, cb);
+      }
+      disconnect() {
+        this.ws.close()
+      }
+  }
+  var url = 'wss://server.meower.org'
+  var cljs = new CloudlinkJS(url);
+  var username = null
+  window.cljs = cljs;
+  cljs.on("data", (data) => {
+    if (data.cmd == "ulist") {
+      window.ulist = data.val.split(";").slice(0, -1)
+      cljs.send({cmd: "direct", val: {cmd: "get_peak_users", val: ""}})
+    };
+    if (data.cmd == "statuscode") {
+      if (data.listener == "moderation") {
+        console.log(String(JSON.stringify({cmd: "alert", val: data.val})))
+      };
+    };
+    if (data.val.mode == "peak") {
+      console.log(String(JSON.stringify({cmd: "users", val: `There are currently ${ulist.length} user(s) online. So far, the most users online were ${data.val.payload.count} on ${data.val.payload.timestamp.mo}/${data.val.payload.timestamp.d}/${data.val.payload.timestamp.y} @ ${data.val.payload.timestamp.h}:${data.val.payload.timestamp.mi}:${data.val.payload.timestamp.s}`})))
+    }
+    if (data.val.mode == "auth") {
+      cljs.send({cmd: "direct", id: "", val: {cmd: "get_profile", val: data.val.payload.username}});
+      cljs.send({cmd: "direct", id: "", val: {cmd: "get_home", val: ""}});
+      console.log(String(JSON.stringify({cmd: "internal", val: "I: authed"})));
+    };
+    if (data.val.mode == "profile") {
+      if (Object.keys(data.val.payload).includes("theme")) {
+        data.val.payload.cmd = "internal-settings"
+        console.log(String(JSON.stringify(data.val.payload)));
+      }
+    };
+    console.log(String(JSON.stringify(data)));
+  });
+  cljs.on("opened", () => {
+    console.log(String(JSON.stringify({cmd: "internal", val: "I: connected"})));
+  });
+  cljs.on("closed", () => {
+    console.log(String(JSON.stringify({cmd: "internal", val: "I: disconnected"})));
+  });
+</script>
+<script>
+  function ping() {
+    cljs.send({cmd: "direct", id: "", val: {cmd: "ping", val: ""}});
+  };
+  async function login(u, p) {
+    username = u;
+    ip = await (await fetch('https://api.meower.org/ip')).text();
+    cljs.send({cmd: "direct", id: "", val:{cmd: "version_chk", val: "mobile-alpha-0.5-dev"}});
+    cljs.send({cmd:"direct",val:{cmd:"type",val:"mobile"}});
+    cljs.send({cmd: "direct", val: {cmd: "ip", val: ip}});
+    cljs.send({cmd: "direct", id: "", val: "meower"});
+    cljs.send({cmd:"direct", id: "", val:{cmd:"authpswd",val:{username: u, pswd: p}}});
+  };
+  async function create_acc(u, p) {
+    ip = await (await fetch('https://api.meower.org/ip')).text();
+    cljs.send({cmd: "direct", id: "", val:{cmd: "version_chk", val: "mobile-alpha-0.5-dev"}});
+    cljs.send({cmd:"direct",val:{cmd:"type",val:"mobile"}});
+    cljs.send({cmd: "direct", val: {cmd: "ip", val: ip}});
+    cljs.send({cmd: "direct", id: "", val: "meower"});
+    cljs.send({cmd:"direct", id: "", val:{cmd:"gen_account",val: p}});
+  };
+  function get_post(post_id) {
+    cljs.send({cmd: "direct", id: "", val: {cmd: "get_post", val: post_id}});
+  };
+  function get_profile(user_id) {
+    cljs.send({cmd: "direct", id: "", val: {cmd: "get_profile", val: user_id}});
+  }
+  function refresh_home() {
+    cljs.send({cmd: "direct", id: "", val: {cmd: "get_home", val: ""}});
+  };
+  function new_post(text) {
+    var text = text.replaceAll("%%1", "`")
+    cljs.send({cmd: "direct", id: "", val: {cmd: "post_home", val: text}});
+  };
+  function clear_home() {
+    cljs.send({cmd: "direct", val: {cmd: "clear_home", val: ""}, listener: "moderation"});
+  };
+  function kick(user) {
+    cljs.send({cmd: "direct", val: {cmd: "kick", val: user}, listener: "moderation"});
+  };
+  function ban(user) {
+    cljs.send({cmd: "direct", val: {cmd: "ban", val: user}, listener: "moderation"});
+  };
+  function ban_ip(user) {
+    cljs.send({cmd: "direct", val: {cmd: "ip_ban", val: user}, listener: "moderation"});
+  };
+  function pardon(user) {
+    cljs.send({cmd: "direct", val: {cmd: "pardon", val: user}, listener: "moderation"});
+  };
+  function pardon_ip(user) {
+    cljs.send({cmd: "direct", val: {cmd: "ip_pardon", val: user}, listener: "moderation"});
+  };
+</script>
