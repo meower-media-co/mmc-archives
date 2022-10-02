@@ -1,0 +1,8 @@
+Heads up!
+
+Your RP2040 MUST be running CircutPython
+for the time being as MicroPython doesn't
+have full support for UART over USB
+passthrough on the rp2040 yet.
+
+- MikeDEV
