@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///home/william/Projects/meower-desktop/.github/workflows/build.yml"
+    }
+}

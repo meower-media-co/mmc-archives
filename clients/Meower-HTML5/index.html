@@ -1,0 +1,210 @@
+<!-- MEOWER HTML5 OR WUI. -->
+<!-- Sample text: Lorem, ipsum fuggdklnvjknerkbjhiodhjhjdrjb, this is the last text this can handle, after all you all know i love cats, more the meower mascot, in speaking of that, remember the mascot war? i was just upset, but i do realize how bad my mascot was, also i hate st for what they did lol, so uh back to cats, i have a cat, also i saw ducks 3 days ago. wait i still have room to talk, okay, but why im waitng to fill all this up AAAAAAAAAAAAAAAAAA *ded*-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meower</title>
+		<link href="style.css" rel="stylesheet" id="darkmodecss">
+		<link href="animation.css" rel="stylesheet">
+		<script type="text/javascript">
+			var errorhandle = false //Disables Error Handling, For debugging
+			window.onerror = function(error) {
+				if (errorhandle == true) {
+			  		location.replace("./error.html?error=" + error)
+				}
+			};
+		</script>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="warning.js"></script>
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<noscript style="font-family: sans-serif; width: 100%; height: 100%;">
+			<div id="msa-alert-box" class="CENTERED">
+				<img src="Assets/Art/alert_bg.png" id="alb_bgimg"></img>
+				<video width="320" height="240" controls class="CENTERED">
+					<source src="Assets/PUTTHEGODDAMNCDIN.mp4" type="video/mp4">
+					Stop using Ie2 nerd
+				</video>
+				<p class="jsuse">Meower uses javascript to work, please enable javascript.</p>
+			</div>
+			<div id="msa-bg"></div>
+		</noscript>
+		<div id="meower-style-alert">
+			<div id="msa-alert-box" class="CENTERED">
+				<img src="Assets/Art/alert_bg.png" id="alb_bgimg"></img>
+				<p id="alb-title">Title, Defaulted to Alert</p>
+				<p id="alb-message">Message Content, Needed</p>
+				<button id="alb-button" onclick="alert('This button does anything you want!')">Do thing, defaulted to Ok</button>
+			</div>
+			<div id="msa-bg"></div>
+		</div>
+		<div id="start">
+			<!--<button class="BIG" id="darkmodetoggle" onclick="changetheme()">Toggle Dark Mode (Might be Outdated) (BETA)</button>-->
+			<button class="BIG CENTERED" onclick="goto_connect()">Press me to continue.</button>
+		</div>
+		<div id="introscreen">
+			<p class="loginwelcome" id="statusintro"></p>
+			<img src="Assets/Art/logo_dark_0_orange.svg" id="logo_intro" class = "CENTERED"></img>
+			<div id="responsive_introanim1">
+				<iframe src="" id="introanim1"></iframe>
+			</div>
+		</div>
+		<div id="login-nocookie">
+			<p id="nocookiewelcome">Welcome to Meower!</p>
+			<button onclick="login()" class="BIG" id="logbttn_l">Log in</button>
+			<button onclick="join()" class="BIG" id="joinbttn_l">Join</button>
+			<img src="Assets/Art/happymeow.svg" class="CENTERED" id = "meow_login"></img>
+			<p id="login_v">Meower HTML Public Beta V1.4.9, Sister project of Meower Media Co.</p>
+		</div>
+		<div id="login">
+			<p class="loginwelcome">Log in to Meower</p>
+			<form autocomplete="off">
+				<input placeholder="Enter your password." id="pswd1" type="password"></input>
+				<input placeholder="Enter your username." id="user1"></input>
+			</form>
+			<button onclick="auth_login()" class="letsgobttn">Let's go!</button>
+			<button onclick="showpass()" class="showpassbttn">Show/Hide Password</button>
+			<button onclick="ms_alert('Login Screen','This feature is coming soon!')" class="gb-bttn">Go Back</button>
+		</div>
+		<div id="join">
+			<p class="loginwelcome">Welcome to Meower!</p>
+			<form autocomplete="off">
+				<input placeholder="Enter a password." id="pswd2" type="password"></input>
+				<input placeholder="Enter a username." id="user2"></input>
+			</form>
+			<button onclick="auth_join()" class="letsgobttn">Let's go!</button>
+			<button onclick="showpass2()" class="showpassbttn">Show/Hide password</button>
+			<button onclick="ms_alert('Join Screen','This Feature Is coming soon!')" class="gb-bttn">Go Back</button>
+		</div>
+		<div id="home">
+			<div id="HomeArea2">
+				<button onclick="post()" id="PostButton">Post</button>
+				<button onclick="showusers()" id="ShowUsers">Show Users Online</button>
+				<input type="text" name="post" value="test" id="txtpostpost"></input>
+			</div>
+			<div class="SideBar">
+				<button class="meower-styled-button" onclick="logout()"><img src="Assets/Art/logout.svg"></img></button>
+				<button onclick="ms_alert('Alert test!', 'This is testing the alert box feature! This will be a feature that will be used for disconnection screens and work in progress features!')">Alert Box Test</button>
+				<button onclick='ms_alert("Home Navbar","Full changelog screen coming soon, Changelog: Bug fixes and manual logout clear cookies")'>Chan- ge Log</button>
+				<button class="meower-styled-button" onclick="sussybaka()"><img alt="sus thing"></img></button>
+				<button class="meower-styled-button" onclick="tohomeSB()"></button>
+				<button class="meower-styled-button" onclick="groupchats()">Group Chats</button>
+			</div>
+			<div id = "UsersOnline">
+				<p id="UsersCount">OOPS! The code might not be working!</p>
+				<p id="UsersOn">OOPS! The code might not be working!</p>
+			</div>
+			<div id="HomeArea">
+				<div class="Post_Home_UI">
+					<div class="Post_Top">
+						<image class="Post_UserImage" src="Assets/Art/Icons/icon_21.svg"><div class="online"></div></image>
+						<p2 class="Post_User">testttttttttttttttttttttttttttttttttttttttttt</p2>
+					</div>
+					<p2 class="Post_Text">eeee</p2>
+				</div>
+			</div>
+			<div id="Settings">
+				<p2>Settings</p2>
+				<div class="onoff"><p2 class="option_header">On/Off testing</p2><p2 class="option_content">Lorem, ipsum fuggdklnvjknerkbjhiodhjhjdrjb, this is the last text this can handle, after all you all know i love cats, more the meower mascot, in speaking of that, remember the mascot war? i was just upset, but i do realize how bad my mascot was, also i hate st for what they did lol, so uh back to cats, i have a cat, also i saw ducks 3 days ago. wait i still have room to talk, okay, but why im waitng to fill all this up AAAAAAAAAAAAAAAAAA *ded*</p2><button class="changebutton"><img src="./Assets/Art/Buttons/toggle_false_orange.svg"></img></button></div>
+			</div>
+		</div>
+		<div id="logout">
+			<p class="loginwelcome">You have logged out!</p>
+			<button class="BIG CENTERED" onclick="location.reload()">Wanna log back in?</button>
+		</div>
+		<div id="group-chats">
+			<p2>Group cat</p2>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+			<img src="./Assets/Art/Icons/icon_21.svg" alt="MEOW"></img>
+		</div>
+		<div id="wrongcache">
+			<p>If this message appears, Your Browser Might not be properly updating cache!</p>
+		</div>
+	</body>
+</html>

@@ -1,3 +1,3 @@
-# Meower Media Co. Archives
+# Meower Media Archives
 
-This contains archived repositories, code, binaries, etc. in the Meower Media Co. Organization. This code here will not be updated and is only for historical purposes only.
+This repo includes archived versions of repositories used by and or created by Meower Media. The code here won't be updated and isn't meant to be used. Each folder contains a README.md file with more information about the projects contained within.

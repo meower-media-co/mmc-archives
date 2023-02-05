@@ -1,0 +1,296 @@
+<!doctype html>
+<!-- Hello there! This webpage was made by zedthehedgehog, a total html noob, so the code is pretty messy, enter at your own risk. -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>meower - web</title>
+	<link rel="shortcut icon" href="https://meower.org/assets/77336943.png" type="image/x-icon">
+	<style>
+		.fade-in-animation {
+			animation: fadeIn: 0.7s;
+			-webkit-animation: fadeIn 0.7s;
+			-moz-animation: fadeIn 0.7s;
+			-o-animation: fadeIn 0.7s;
+		}
+		@keyframes fadeIn {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		@-webkit-keyframes fadeIn {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		@-moz-keyframes fadeIn {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		@-o-keyframes fadeIn {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		::-moz-selection {
+  color: white;
+  background: #F9A637;
+}
+		
+		::-webkit-selection {
+  color: white;
+  background: #F9A637;
+}		
+		
+		::-o-selection {
+  color: white;
+  background: #F9A637;
+}		
+
+::selection {
+	color: white;
+  background: #F9A637;
+}
+		@font-face {
+            font-family: simvoni;
+            src: url(https://meower.org/fonts/new-meower-fonts/SimvoniBold.ttf) format("truetype")
+        }
+		.container {
+	margin-left: 15vw;
+	margin-top: 60px;		
+			
+}
+		.sidebar {
+height: 100%;
+width: 11vw;
+position: absolute;
+left: 0;
+top: 0;
+padding-top: 2vh;
+font-family: simvoni;
+z-index: -999;
+border-right-color: lightgray;
+border-right: groove;
+padding-left: 2vw	;
+padding-right: 1vw;
+margin-top: 5vh;	
+margin-bottom: -40vh;			
+}
+
+.sidebar div {
+padding: 8px;
+font-size: 24px;
+display: block;
+}
+		
+				.sidebar-right {
+float: right;			
+height: 100%;
+width: 8vw;
+position: ;
+left: 0;
+top: 0;
+padding-top: 1vh;
+font-family: simvoni;
+z-index: -999;
+border-left-color: #D9D9D9;
+border-left: groove;
+padding-left: 1vw;
+padding-right: 1vw;					
+margin-left: 1.5vw;	
+}
+
+.sidebar-right div {
+padding: 8px;
+font-size: 24px;
+display: block;
+}
+
+.body-text {
+margin-left: 150px;
+font-size: 18px;
+}
+		header {
+			background: white;
+		}
+		
+		footer {
+			background: white;
+		}
+		
+		nav {
+			float: right;
+			  margin: 0;
+  padding: 0;
+		}
+
+li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top:10px;
+	padding-right: 23px;
+	  list-style: none;
+
+
+}
+		nav a {
+  color: #444;
+  text-decoration: none;
+  font-size: 20px;
+font-family: simvoni;
+			font-weight: bolder;
+			
+}
+
+nav a:hover {
+  color: #000;
+}
+
+		.meowy_bg {
+	position: fixed;
+  	bottom: 0;
+	right: 0;		
+		
+			}
+		center {
+			  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ right: 10%;			
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+		}
+		button {
+		margin-top: -15px;	
+		border-radius: 14px;
+		background: #F9A637;
+box-shadow: 0px 4px 0px #C5842E;
+		border: none;
+		font-family: simvoni;
+		font-size: 32; 	
+		color: #fff;
+	    margin-right: 25px;
+		padding: 9px 15px;	
+		cursor: pointer;	
+		margin-right: -10px;	
+		float: right;	
+			
+		}
+		button:active {	
+		box-shadow: 0px 0px 0px;
+		transform: translateY(4px);	
+		}
+		.button2 {	
+		width: 120%;	
+		border-radius: 14px;
+		background-color: #E8F3FD;
+		padding: 0px 20px;
+		border: none;
+		font-family: simvoni;; 	
+		color: #000;	
+		}
+			.img1 {
+	  
+filter: brightness(0%);
+  margin-left: 10px;
+	margin-top: 10px;		
+}
+				.stack-bottom {
+    position:absolute;
+    z-index:-999;
+}
+			p, h2, h3, h4 {
+		font-family: Simvoni;
+		font-weight: 1000;	
+		margin-top 0;		
+	}
+		h1 {
+		margin-top:	60px;
+		font-family: Simvoni;
+		font-weight: 1000;	
+		font-size: 50px;
+		margin-top 0;	
+	}
+		h5 {
+	 	font-family: simvoni;
+		color:gray;
+		font-size: 14px;	
+		font-weight: 100;	
+		}
+		h4 {
+	 	font-family: simvoni;
+		color:gray;
+		font-size: 18px;	
+		font-weight: 100;	
+		}
+		searchcontainer {
+padding: 20px;					
+background: #FFFFFF;
+box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+padding: 20px;	
+display: flex;			
+			
+		}
+		input {
+			border: none;
+			font-family: simvoni;
+			font-size: 20px;
+			margin-right: 20px;
+			overflow: hidden;
+			width: 100vw;
+		}
+		input:focus {
+			border: none;
+			outline: none;
+		}
+		body {
+			background-color: #ededed;
+		}
+		
+		a{ color: black; }
+		
+		a.result {
+			color: #f9a535
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+	
+<header style="margin-top: -16px; margin-left: -8px; margin-right: -8px"><a href="https://meower.org"><img style="margin-left:10px;margin-top:10px;filter: brightness(0%)" height="50" src="https://meower.org/assets/logo.png"></a>
+			<ul style="float: right;">
+		<li ><nav><a href="https://meower.org">meower</a></nav></li>		
+		<li ><nav> <a href="https://meower.org/legal/">legal</a></nav></li>
+		<li ><nav> <a href="https://wiki.meower.org">wiki</a></nav></li>
+				
+		</ul>
+		
+	
+
+		
+</header>
+	<div class="fade-in-animation"><div class="container"><div class="sidebar">
+		<div><span style=" font-size: 64px"><strong>Web</strong></span></div>
+<div><strong><img style="margin-bottom: -10px;" height="30px" src="https://meower.org/assets/web-meowy.png">Web Search</strong></div>
+<div><img height="20px" style="margin-right: 3px;" src="https://meower.org/assets/logo-m.png">Meower Search</div>
+		<hr>
+<div><span style="font-size: 25px;">advanced...</span></div>
+</div>
+		<div style="float: right;" class="sidebar-right">
+	
+<div><a href="https://api.web.meower.org">Web API</a></div>
+			<div><a href="https://github.com/meower-media-co/meower-web">GitHub</a></div>
+<div><span style="font-size: 16px">Other Services:</span></div>			
+		<hr>
+			<div><span style="font-size: 22px;"><a href="https://app.meower.org">Meower</a></span></div>
+			<div><span style="font-size: 22px;"><a href="https://wiki.meower.org">WikiMeower</a></span></div>
+			<div><span style="font-size: 22px;"><a href="https://github.com/mikedev101/cloudlink">CloudLink</a></span></div>
+</div>
+		
+		<searchcontainer style="margin-top:-40px"><input type=text placeholder="Search Anything..."></input><button><strong><img height="30px" src="https://meower.org/assets/search.svg"></strong></button></searchcontainer>
+		<br><br><h1 style="margin-top: -1px; margin-bottom: -20px;color: #f9a535"><a class="result" href="https://example.com">result</a></h1><h2 style="color: #7E7E7E">https://example.com<br>
+<span style="color:#000;">I wonder if example.com exists...</span></h2>
+
+</div></div>
+</body>
+</html>
