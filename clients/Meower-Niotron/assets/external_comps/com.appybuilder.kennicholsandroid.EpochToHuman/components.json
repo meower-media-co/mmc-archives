@@ -1,0 +1,25 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "http://appyBuilder.com/extensions/icons/extension.png",
+ "methods": [{
+  "deprecated": "false",
+  "name": "EpochToHuman",
+  "description": "EpochToHuman",
+  "params": [{
+   "name": "epoch",
+   "type": "number"
+  }],
+  "returnType": "text"
+ }],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "com.appybuilder.kennicholsandroid.EpochToHuman.EpochToHuman",
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "EpochToHuman",
+ "helpString": "This Extension was created with the AppyBuilder Code Editor.<br>Create your own here:<br><a href='https://editor.appybuilder.com' target='_blank'>https://editor.appybuilder.com<\/a><br>",
+ "properties": [],
+ "events": []
+}]

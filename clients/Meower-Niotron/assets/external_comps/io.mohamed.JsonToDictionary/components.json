@@ -1,0 +1,35 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2020-10-25T19:32:51+0000",
+ "nonVisible": "true",
+ "iconName": "https://firebasestorage.googleapis.com/v0/b/myhtmlpage-fafe8.appspot.com/o/image_16x16.png?alt=media&token=8ef0f45e-f83b-426b-a128-bdb4ed9682cc",
+ "methods": [{
+  "deprecated": "false",
+  "name": "JsonTextDecodeWithDictionaries",
+  "description": "Decodes the given JSON text into appinventor dictionary.",
+  "params": [{
+   "name": "jsonText",
+   "type": "text"
+  }],
+  "returnType": "any"
+ }],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "io.mohamed.JsonToDictionary.JsonToDictionary",
+ "androidMinSdk": 7,
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "JsonToDictionary",
+ "helpString": "Decodes the given JSON text to dictionaries. <br> Developed by : Mohamed Tamer <br> A customized extension from JsonTextDecode block to return a dictionary.",
+ "properties": [],
+ "events": [{
+  "deprecated": "false",
+  "name": "Error",
+  "description": "Fired when an error occurs while decoding the JSON text.",
+  "params": [{
+   "name": "errorMessage",
+   "type": "text"
+  }]
+ }]
+}]

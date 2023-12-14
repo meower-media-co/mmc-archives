@@ -1,0 +1,107 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "https://res.cloudinary.com/gdguru111/image/upload/c_scale,w_16/v1565351469/eo5ac0ltj7kyacvuwybf.jpg",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "ArrayLength",
+   "description": "Returns length of an array",
+   "params": [{
+    "name": "array",
+    "type": "text"
+   }],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetArray",
+   "description": "Return an string array when passing object and attributeName(array name)",
+   "params": [
+    {
+     "name": "object",
+     "type": "text"
+    },
+    {
+     "name": "attributeName",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetObjectByIndex",
+   "description": "Returns an object by index in an array",
+   "params": [
+    {
+     "name": "inArray",
+     "type": "text"
+    },
+    {
+     "name": "index",
+     "type": "number"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetObjectByKey",
+   "description": "Returns an object from another object using attributeName(keyname)",
+   "params": [
+    {
+     "name": "inObject",
+     "type": "text"
+    },
+    {
+     "name": "attributeName",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetValue",
+   "description": "Returns a value from an object when key is passed",
+   "params": [
+    {
+     "name": "object",
+     "type": "text"
+    },
+    {
+     "name": "key",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "HasKey",
+   "description": "Checks wether a json object contains a key or not",
+   "params": [
+    {
+     "name": "object",
+     "type": "text"
+    },
+    {
+     "name": "key",
+     "type": "text"
+    }
+   ],
+   "returnType": "boolean"
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "in.jsonutils.JsonUtils",
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "JsonUtils",
+ "helpString": "<p> This is a nonVisible component which helps you to work with json easily.<br>Made by Jerin Jacob.<br><p> <a href = \"\" target = \"_blank\">More Info<\/a> <br><a href = \"https://paypal.me/JAKSONJACOBP\" target = \"_blank\">Donate<\/a> <br>",
+ "properties": [],
+ "events": []
+}]

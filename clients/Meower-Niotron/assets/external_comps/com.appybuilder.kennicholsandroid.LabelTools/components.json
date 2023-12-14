@@ -1,0 +1,62 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "http://appyBuilder.com/extensions/icons/extension.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "SetHighlightColor",
+   "description": "SetHighlightColor",
+   "params": [
+    {
+     "name": "label",
+     "type": "component"
+    },
+    {
+     "name": "highlightColor",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetLineSpacing",
+   "description": "SetLineSpacing",
+   "params": [
+    {
+     "name": "label",
+     "type": "component"
+    },
+    {
+     "name": "multiplier",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetTextIsSelectable",
+   "description": "SetTextIsSelectable",
+   "params": [
+    {
+     "name": "label",
+     "type": "component"
+    },
+    {
+     "name": "selectAllOnFocus",
+     "type": "boolean"
+    }
+   ]
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "com.appybuilder.kennicholsandroid.LabelTools.LabelTools",
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "LabelTools",
+ "helpString": "This Extension was created with the AppyBuilder Code Editor.<br>Create your own here:<br><a href='https://editor.appybuilder.com' target='_blank'>https://editor.appybuilder.com<\/a><br>",
+ "properties": [],
+ "events": []
+}]

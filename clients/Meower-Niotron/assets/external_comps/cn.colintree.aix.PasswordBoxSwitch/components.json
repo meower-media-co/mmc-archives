@@ -1,0 +1,35 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "images/extension.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "SwitchToPasswordBox",
+   "description": "Method for SwitchToPasswordBox",
+   "params": [{
+    "name": "passwordTextBox",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "SwitchToTextBox",
+   "description": "Method for SwitchToTextBox",
+   "params": [{
+    "name": "passwordTextBox",
+    "type": "component"
+   }]
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "cn.colintree.aix.PasswordBoxSwitch.PasswordBoxSwitch",
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "PasswordBoxSwitch",
+ "helpString": "by ColinTree at http://aix.colintree.cn",
+ "properties": [],
+ "events": []
+}]

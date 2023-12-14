@@ -1,0 +1,427 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIVSURBVDhPlVNNj9JQFD1tIahTAgOhCQGRDkNilCGu3LkwMez8Cbp25z/wl7hxLxuWbIiGEHZkArivxBYQkJShTKAf9t52Oo07T3J7X1/POe+811aAj26361H/X7RaLUEgsXf5FfA8eK4D13OD7lfQ7agHc0F3HRup+UeI5BQRQrFHPSrfOOz+JbynwEFoNiA3Ft6JY2N/EAi4x41YHxr45KAoXhg1NOJUofDe0O/xBLQv6/c5TO0JdloVNzMVe/1xZHJYqLCMp7idP8Pt4jlOZonFhARdaFXHeInXr97wJGE8HmN784VNFOktrl5chU+Ab9+7cNOfeRxtQX50jmKxGFU+n4dji3BticfxZ/JZnsUENrh48IFv/kU99w4XmfdYrVZwHIfn+v0+TNPE5cNPEEUxMDiTatjtdjgej0wirNdr7P+k8OP6FxMNw8BisWBeuVyG/nPvJ3eDM6ATrlQq6HQ6LBYEAZlMhuMSiQSapuF0OkFVVSSTSTZiLn2J1WoVkiQFkWJF4tFohFqtxmQSZbNZHA4HbDYb2LYdvkY/AZHvarlcotfr8X4pDW2NVp3NZphMJmyuKAqnZgNC3GAwGECWZTQaDaTTaTYhs0KhgFKphOFwiFQqxVuKDAgkptOmmPP5nIuIuq6j2WyyOJfLoV6vYzqdYrvdgn/ndrsdftn3oMhEoFUpsmVZvAAhkUjwmSmKgr/4UX5IUCJy/wAAAABJRU5ErkJggg==",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "ArrowScrollLeftward",
+   "description": "Method for ArrowScrollLeftward",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ArrowScrollRightward",
+   "description": "Method for ArrowScrollRightward",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "PageScrollLeftward",
+   "description": "Method for PageScrollLeftward",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "PageScrollRightward",
+   "description": "Method for PageScrollRightward",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "RegisterScrollView",
+   "description": "Method for RegisterScrollView",
+   "params": [{
+    "name": "horizontalScrollArrangement",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollBy",
+   "description": "Method for ScrollBy",
+   "params": [{
+    "name": "px",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollLeftEnd",
+   "description": "Method for ScrollLeftEnd",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollRightEnd",
+   "description": "Method for ScrollRightEnd",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollTo",
+   "description": "Method for ScrollTo",
+   "params": [{
+    "name": "px",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "SmoothScrollBy",
+   "description": "Method for SmoothScrollBy",
+   "params": [{
+    "name": "px",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "SmoothScrollTo",
+   "description": "Method for SmoothScrollTo",
+   "params": [{
+    "name": "px",
+    "type": "number"
+   }]
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "FadingEdgeEnabled",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "MaxScrollPosition",
+   "description": "Return the maximum position that the ScrollArrangement can reach",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "OverScrollMode",
+   "description": "Can be:\n 0: ALWAYS\n1: OVER SCROLL IF CONTENT SCROLLS\n2: NEVER",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ScrollBarEnabled",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "ScrollPosition",
+   "description": "The scroll position is the same as the number of pixels that are hidden from view above the scrollable area. If the scroll bar is at the very left, or if the element is not scrollable, this number will be 0.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "UserControl",
+   "description": "",
+   "type": "boolean"
+  }
+ ],
+ "helpUrl": "",
+ "type": "cn.colintree.aix.ScrollArrangementHandlers.HorizontalScrollHandler",
+ "version": "3",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "HorizontalScrollHandler",
+ "helpString": "by ColinTree at http://aix.colintree.cn/",
+ "properties": [
+  {
+   "defaultValue": "True",
+   "name": "FadingEdgeEnabled",
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "1",
+   "name": "OverScrollMode",
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "True",
+   "name": "ScrollBarEnabled",
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "True",
+   "name": "UserControl",
+   "editorType": "boolean"
+  }
+ ],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "OverScrollLeft",
+   "description": "Event for OverScrollLeft",
+   "params": [{
+    "name": "displacement",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "OverScrollRight",
+   "description": "Event for OverScrollRight",
+   "params": [{
+    "name": "displacement",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ReachLeftEnd",
+   "description": "Event for ReachLeftEnd",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ReachRightEnd",
+   "description": "Event for ReachRightEnd",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollChanged",
+   "description": "Event for ScrollChanged",
+   "params": [{
+    "name": "scrollX",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "TouchDown",
+   "description": "Event for TouchDown",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "TouchUp",
+   "description": "Event for TouchUp",
+   "params": []
+  }
+ ]
+},{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHvSURBVDhPjVLNjtJQFL4U7CgKzLT8TogkRkYlIZo4wsIFG3kAwwO4cu/Cl/ARTNj4APAAMA9gYDATWRg2DlISrKa06MDwc3uv3+0tkNn5pTk55/T7zv3uaQOc83a7Tf4P1Wo10Gq1crmcrANbLNjl5eojcyljLmPUSyhn9ODnO0VSAfAURTFNs9Pp/BgsleGb5eD1yk4SzghhBE44By20YweDQQgmk0mtVlNVFU3kZ+cXoYjHFTIBcYKcLYFSsrcQVPEQMR7YC3ZRvpDwRjM8yFBilrAE0g6xWAxr0HUdfcuyiLIKkrsLM3tH+8VCpm3b/h0AKSgWi9PpdEGNwe9PRF3eCv+dfX+ZOXyxubLC2pTG4/st7QAZom+du4m4jr2fPDhV188SicQNAQz3+/3RaETW+uPD90fXb6l9Qtx78/kcU5LJZDQaFZbEzbaYzWZYq9TX63VOnt6+f4wmym+Dr1/O++IESWUekHhkstlsDMM4fV7WNC2VSvV6PTX9uVKp+ALJBlCu12tESmmhUOh2u/h8KK/mDg8PkPhbklQgk8k0Go1IJIKck6WeXTiWgxOeFB6tqIHm/tLQuK6bTqdLpVL2ofLn6MNGa5rja1hCP64dB6xXjuOI37vZbPqimxgOh4jlcnk8HsNhPp9XVfUf2I8aUMHpkW8AAAAASUVORK5CYII=",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "ArrowScrollDownward",
+   "description": "Method for ArrowScrollDownward",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ArrowScrollUpward",
+   "description": "Method for ArrowScrollUpward",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "PageScrollDownward",
+   "description": "Method for PageScrollDownward",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "PageScrollUpward",
+   "description": "Method for PageScrollUpward",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "RegisterScrollView",
+   "description": "Method for RegisterScrollView",
+   "params": [{
+    "name": "verticalScrollArrangement",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollBottom",
+   "description": "Method for ScrollBottom",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollBy",
+   "description": "Method for ScrollBy",
+   "params": [{
+    "name": "px",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollTo",
+   "description": "Method for ScrollTo",
+   "params": [{
+    "name": "px",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollTop",
+   "description": "Method for ScrollTop",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "SmoothScrollBy",
+   "description": "Method for SmoothScrollBy",
+   "params": [{
+    "name": "px",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "SmoothScrollTo",
+   "description": "Method for SmoothScrollTo",
+   "params": [{
+    "name": "px",
+    "type": "number"
+   }]
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "FadingEdgeEnabled",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "MaxScrollPosition",
+   "description": "Return the maximum position that the ScrollArrangement can reach",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "OverScrollMode",
+   "description": "Can be:\n 0: ALWAYS\n1: OVER SCROLL IF CONTENT SCROLLS\n2: NEVER",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ScrollBarEnabled",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "ScrollPosition",
+   "description": "The scroll position is the same as the number of pixels that are hidden from view above the scrollable area. If the scroll bar is at the very top, or if the element is not scrollable, this number will be 0.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "UserControl",
+   "description": "",
+   "type": "boolean"
+  }
+ ],
+ "helpUrl": "",
+ "type": "cn.colintree.aix.ScrollArrangementHandlers.VerticalScrollHandler",
+ "version": "3",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "VerticalScrollHandler",
+ "helpString": "by ColinTree at http://aix.colintree.cn/",
+ "properties": [
+  {
+   "defaultValue": "True",
+   "name": "FadingEdgeEnabled",
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "1",
+   "name": "OverScrollMode",
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "True",
+   "name": "ScrollBarEnabled",
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "True",
+   "name": "UserControl",
+   "editorType": "boolean"
+  }
+ ],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "OverScrollDown",
+   "description": "Event for OverScrollDown",
+   "params": [{
+    "name": "displacement",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "OverScrollUp",
+   "description": "Event for OverScrollUp",
+   "params": [{
+    "name": "displacement",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ReachBottom",
+   "description": "Event for ReachBottom",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ReachTop",
+   "description": "Event for ReachTop",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ScrollChanged",
+   "description": "Event for ScrollChanged",
+   "params": [{
+    "name": "scrollY",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "TouchDown",
+   "description": "Event for TouchDown",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "TouchUp",
+   "description": "Event for TouchUp",
+   "params": []
+  }
+ ]
+}]

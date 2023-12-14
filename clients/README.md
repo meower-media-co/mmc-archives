@@ -13,6 +13,10 @@ This is the first official browser client for Meower that wasn't a Scratch proje
 
 Developed by @tnix100, this is an Android client for Meower developed by @tnix100 in Kodular. It was deprecated in favor of Meower-Svelte being usable on mobile devices.
 
+## Meower-Niotron
+
+Developed by @MikeDev101, this was an attempt at continuing development of Meower-Mobile using Niotron. Deprecated due to lack of motivation and inactive development.
+
 # Meower-Svelte-Desktop
 
 This is a fork of Meower-Svelte that was thrown into a Tauri app. This was deprecated due to a lack of development.

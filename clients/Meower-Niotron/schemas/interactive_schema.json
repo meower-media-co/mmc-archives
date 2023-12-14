@@ -1,0 +1,57 @@
+{
+    "name": "interactive_schema",
+    "metadata-version": 1,
+    "extension_version": 5,
+    "author": "Mike Renaker",
+    "platforms": [
+        "builder.niotron.com"
+    ],
+    "extensions": {
+        "AsyncProc": "co.sgext.asyncprocedure.AsyncProc",
+        "JsonToDictionary": "io.mohamed.JsonToDictionary.JsonToDictionary",
+        "DynamicComponents": "com.yusufcihan.DynamicComponents.DynamicComponents",
+        "WebSocketConnector": "com.sumit1334.websocket.WebSocketConnector",
+        "PixZ": "com.nikzdevz.PixZ.PixZ",
+        "DevYBImageLoader": "com.devyb.devybimageloader.DevYBImageLoader",
+        "RelativeView": "RelativeView.RelativeView",
+        "LabelTools": "com.appybuilder.kennicholsandroid.LabelTools.LabelTools",
+        "EpochToHuman": "com.appybuilder.kennicholsandroid.EpochToHuman.EpochToHuman"
+    },
+    "keys": [
+        "button_id",
+        "icon_id"
+    ],
+    "components": [
+        {
+            "id": "{button_id}",
+            "type": "NiotronCardView",
+            "properties": {
+                "AlignHorizontal": 3,
+                "AlignVertical": 2,
+                "Clickable": true,
+                "CompatPadding": true,
+                "ContentPaddingBottom": 0,
+                "ContentPaddingLeft": 0,
+                "ContentPaddingRight": 0,
+                "ContentPaddingTop": 0,
+                "Elevation": 0,
+                "Height": 45,
+                "Width": 40,
+                "LongClickable": false,
+                "Radius": 15,
+                "RippleColor": 16777215,
+                "RippleEnabled": false
+            },
+            "components": [
+                {
+                    "id": "{icon_id}",
+                    "type": "Image",
+                    "properties": {
+                        "Height": 25,
+                        "Width": 25
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "name": "post_schema",
+    "metadata-version": 1,
+    "extension_version": 5,
+    "author": "Mike Renaker",
+    "platforms": [
+        "builder.niotron.com"
+    ],
+    "extensions": {
+        "AsyncProc": "co.sgext.asyncprocedure.AsyncProc",
+        "JsonToDictionary": "io.mohamed.JsonToDictionary.JsonToDictionary",
+        "DynamicComponents": "com.yusufcihan.DynamicComponents.DynamicComponents",
+        "WebSocketConnector": "com.sumit1334.websocket.WebSocketConnector",
+        "PixZ": "com.nikzdevz.PixZ.PixZ",
+        "DevYBImageLoader": "com.devyb.devybimageloader.DevYBImageLoader",
+        "RelativeView": "RelativeView.RelativeView",
+        "LabelTools": "com.appybuilder.kennicholsandroid.LabelTools.LabelTools",
+        "EpochToHuman": "com.appybuilder.kennicholsandroid.EpochToHuman.EpochToHuman"
+    },
+    "keys": [
+        "post_id",
+        "icon_image_id",
+        "icon_button_id",
+        "username_id",
+        "timestamp_id",
+        "content_id",
+        "interactives_id",
+        "info_body_id",
+        "info_labels_body_id",
+        "content_body_id"
+    ],
+    "components": [
+        {
+            "id": "{post_id}",
+            "type": "NiotronCardView",
+            "properties": {
+                "CompatPadding": true,
+                "Width": -2,
+                "Radius": 15,
+                "RippleColor": 16777215,
+                "StrokeColor": 4294550838
+            },
+            "components": [
+                {
+                    "id": "{info_body_id}",
+                    "type": "HorizontalArrangement",
+                    "properties": {
+                        "AlignHorizontal": 3,
+                        "AlignVertical": 2,
+                        "Width": -2
+                    },
+                    "components": [
+                        {
+                            "id": "{icon_button_id}",
+                            "type": "NiotronCardView",
+                            "properties": {
+                                "AlignHorizontal": 3,
+                                "AlignVertical": 2,
+                                "BackgroundColor": 4278190080,
+                                "Clickable": true,
+                                "CompatPadding": true,
+                                "ContentPaddingBottom": 0,
+                                "ContentPaddingLeft": 0,
+                                "ContentPaddingRight": 0,
+                                "ContentPaddingTop": 0,
+                                "FullClickable": true,
+                                "Height": 72,
+                                "Width": 70,
+                                "Radius": 15,
+                                "RippleColor": 16777215,
+                                "RippleEnabled": false
+                            },
+                            "components": [
+                                {
+                                    "id": "{icon_image_id}",
+                                    "type": "Image",
+                                    "properties": {
+                                        "Height": -2,
+                                        "Width": -2,
+                                        "Picture": "",
+                                        "ScalePictureToFit": true
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "{info_labels_body_id}",
+                            "type": "VerticalArrangement",
+                            "properties": {
+                                "AlignVertical": 2,
+                                "Width": -2,
+                                "HeihMargin": [
+                                    5,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "components": [
+                                {
+                                    "id": "{username_id}",
+                                    "type": "Label",
+                                    "properties": {
+                                        "Clickable": false,
+                                        "CustomFontTypeFace": "Simvoni-Bold.otf",
+                                        "FontSize": 20,
+                                        "Width": -2,
+                                        "HeihPadding": [
+                                            0,
+                                            0,
+                                            0,
+                                            5
+                                        ],
+                                        "Text": ""
+                                    }
+                                },
+                                {
+                                    "id": "{timestamp_id}",
+                                    "type": "Label",
+                                    "properties": {
+                                        "Clickable": false,
+                                        "CustomFontTypeFace": "Simvoni-Italic.otf",
+                                        "FontSize": 12,
+                                        "Width": -2,
+                                        "Text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "{content_body_id}",
+                    "type": "HorizontalArrangement",
+                    "properties": {
+                        "AlignVertical": 2,
+                        "Width": -2,
+                        "HeihPadding": [
+                            5,
+                            0,
+                            5,
+                            5
+                        ]
+                    },
+                    "components": [
+                        {
+                            "id": "{content_id}",
+                            "type": "Label",
+                            "properties": {
+                                "Clickable": false,
+                                "CustomFontTypeFace": "Simvoni.otf",
+                                "FontSize": 18,
+                                "Width": -2,
+                                "Text": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "{interactives_id}",
+                    "type": "HorizontalArrangement",
+                    "properties": {
+                        "AlignVertical": 2,
+                        "Width": -2,
+                        "HeihMargin": [
+                            5,
+                            5,
+                            0,
+                            5
+                        ]
+                    },
+                    "components": []
+                }
+            ]
+        }
+    ]
+}

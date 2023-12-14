@@ -1,0 +1,24 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2019-11-27T19:37:34+0100",
+ "nonVisible": "true",
+ "iconName": "http://s2.googleusercontent.com/s2/favicons?domain_url=http://kodular.io",
+ "methods": [],
+ "blockProperties": [{
+  "rw": "read-only",
+  "deprecated": "false",
+  "name": "isNightModeActive",
+  "description": "Returns true if the device night mode is on.",
+  "type": "boolean"
+ }],
+ "helpUrl": "Simple 'Night Mode' extension. Powered by Mika. (c)2019 Kodular.io",
+ "type": "io.kodular.extension.NightMode",
+ "androidMinSdk": 19,
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "NightMode",
+ "helpString": "Simple 'Night Mode' extension. Powered by Mika. (c)2019 Kodular.io",
+ "properties": [],
+ "events": []
+}]

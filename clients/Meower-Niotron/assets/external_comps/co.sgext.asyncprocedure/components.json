@@ -1,0 +1,120 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "aiwebres/icon.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "Call",
+   "description": "Calls the procedure in the current screen with the given name.",
+   "params": [{
+    "name": "procedureName",
+    "type": "text"
+   }],
+   "returnType": "any"
+  },
+  {
+   "deprecated": "false",
+   "name": "CallAfterDelay",
+   "description": "Calls the procedure on the UI thread after waiting delay milliseconds on a separate thread.",
+   "params": [
+    {
+     "name": "delay",
+     "type": "number"
+    },
+    {
+     "name": "procedureName",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "CallAfterDelayWithArgs",
+   "description": "Calls the procedure on the UI thread with the given arguments after waiting delay milliseconds on a separate thread.",
+   "params": [
+    {
+     "name": "delay",
+     "type": "number"
+    },
+    {
+     "name": "procedureName",
+     "type": "text"
+    },
+    {
+     "name": "arguments",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "CallAsynchronous",
+   "description": "Calls the procedure in the current screen on a thread separate from the UI thread.",
+   "params": [{
+    "name": "procedureName",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "CallAsynchronousWithArgs",
+   "description": "Calls the procedure in the current screen on a thread separate from the UI thread with the given list of arguments.",
+   "params": [
+    {
+     "name": "procedureName",
+     "type": "text"
+    },
+    {
+     "name": "arguments",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "CallWithArgs",
+   "description": "Calls the procedure in the current screen with a list of arguments.",
+   "params": [
+    {
+     "name": "procedureName",
+     "type": "text"
+    },
+    {
+     "name": "arguments",
+     "type": "list"
+    }
+   ],
+   "returnType": "any"
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "co.sgext.asyncprocedure.AsyncProc",
+ "androidMinSdk": 7,
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "AsyncProc",
+ "helpString": "Extension Made From FuncCall. Edited by Abhijith. More extension at : https://simplegamers.co/appinv/store",
+ "properties": [],
+ "events": [{
+  "deprecated": "false",
+  "name": "CallFinishedWithResult",
+  "description": "After an asynchronous procedure call, this event is run with the results of the invocation.",
+  "params": [
+   {
+    "name": "procedureName",
+    "type": "text"
+   },
+   {
+    "name": "arguments",
+    "type": "list"
+   },
+   {
+    "name": "result",
+    "type": "any"
+   }
+  ]
+ }]
+}]
