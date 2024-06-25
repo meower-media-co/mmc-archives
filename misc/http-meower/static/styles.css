@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "simvoni";
+  src: url(https://meower.org/fonts/Simvoni.ttf) format("truetype");
+}
+
+#header {
+  width: 100%;
+  color: #ff5600;
+  background-color: #ff5600;
+  height: 45px;
+}
+
+#header #meower-logo {
+  position: relative;
+  top: -12px;
+  right: -5px;
+  left: 20px;
+  color: #ffff;
+  font-size: 24px !important;
+  font-family: "simvoni";
+}
+
+#header * {
+  display: inline-block;
+}
+
+#header p {
+  position: relative;
+  right: 5px;
+}
+#header #menu {
+  float: right;
+  position: relative;
+  left: -12px;
+  top: 13px;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  right: 5px;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #ffff;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  color: #ffff;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  color: #deddda;
+}
+
+a:active {
+  color: #FFFFF;
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #f9a737;
+}
+
+ul {
+  display: inline-table;
+  align: left;
+  padding: 6px;
+  list-style: none !important;
+}
+
+li {
+  padding-bottom: 8px;
+  padding-left: 6px;
+  display: inline-grid;
+  border-color: black;
+  align: center;
+  border-width: 1px;
+  min-width: 120px;
+}
+
+li * {
+  list-style: none;
+  background-color: #d28f53 !important;
+  border-radius: 12px;
+  max-height: 190px;
+
+  font-family: "simvoni";
+}
+
+li img {
+  padding: 0px !important;
+}
+
+.link {
+}
+
+li .afterImg {
+  color: #ffff;
+  position: relative;
+  padding: 1px !important;
+  top: -18px !important;
+  max-width: 100px;
+  margin: 0px;
+}
+li .afterImg p {
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  #header #menu {
+    position: relative;
+    display: table !important;
+    top: 6px;
+    left: 3px !important;
+    max-width: 210px;
+    text-align: center;
+    width: 210px;
+  }
+}

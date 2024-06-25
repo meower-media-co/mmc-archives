@@ -1,0 +1,54 @@
+<!doctype html >
+<html lang="en">
+
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>http.meower.org</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
+  <link rel="icon" href="/static/favicon.jpg" />
+	
+	<link href="/static/favicon.jpg" sizes=’120×120’/>
+	<link href="/static/favicon.jpg" rel=’apple-touch-icon’ sizes=’152×152’/>
+</head>
+<body>
+  <div id="header"> 
+    <div id="meower-logo">
+      <p href="/">HTTPMeower</p>
+
+    </div>
+    <!-- hamburger menu, no bootstrap -->
+    <div id="menu">
+      <div> 
+        <a id="scratch" href="https://meower.org/">Meower </a> <a id="scratch" class="link" href="https://app.meower.org">launch</a> <a id="scratch" class="link" href="https://wiki.meower.org">wiki</a> <a id="scratch" class="link" href="https://forums.meower.org">forums</a> <a id="scratch" class="link" href="https://meower.org/legal.html">legal</a>
+      </div>
+    </div>
+    
+  </div>
+  <ul>
+    {% for url in urls %}
+      
+      <li>
+        <center>
+          <p href="/{{ url }}">
+           
+            <img href="/{{ url }}" src="/{{ url }}" width="100" height="100">
+            <div class="afterImg">
+            
+                <p>
+                  {{url.split(".")[0]}}
+                  <br>
+                  {{ statuscodes[url.split(".")[0]] }}
+                </p>
+            
+            </div>
+          </p>  
+        </center>
+      </li>
+    
+    {% endfor %}
+  </ul>
+</body>
+</html>
