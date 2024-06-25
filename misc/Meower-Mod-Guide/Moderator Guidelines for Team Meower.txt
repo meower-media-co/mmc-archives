@@ -1,0 +1,391 @@
+
+
+
+
+
+Meower Moderator Guide
+
+For use within the Council, Managers, and the Moderation Team.
+
+
+
+
+Written by The Council of Meowers.
+Last Updated: 8/16/22
+Table of contents
+For easy navigation
+
+Contents
+Before we start…	4
+Introduction	5
+Why?	5
+Who does this apply to?	5
+NOTE:	5
+Moderation Level Guide	6
+Level 1	6
+Level 2	7
+Level 3	7
+Level 4	8
+Accessing User Data 	9
+Account Termination 	11
+Alerts 	13
+Announcements 	15
+Bans, Blocks/Suspensions, and Kicks.	17
+Bans 	17
+Blocks/Suspensions 	17
+Kicks 	18
+Clearing Home 	20
+IP-related actions 	22
+IP Pardon	22
+IP Ban	22
+Report Queue 	24
+
+
+
+
+Before we start…
+
+Welcome to the Meower Moderation team! 
+You’re most likely reading this as you have just been promoted to moderator status. 
+This guide contains information the tools you’re going to use in your job as a moderator! It also has the rules of the road, as being a moderator on Meower is a long journey.
+
+Please read through this guide very carefully. Don’t skim it. Some of this information may be unnecessary if you are at a lower level, so make sure to read the level guide to know which seals to look for depending on your moderation level.
+
+If you’re not new, welcome back if you’re going here to reference how to do things, or the rules of the road.
+
+
+
+
+Introduction
+
+Why?
+Moderating Meower is a big level of power, and as they say, with great power, comes great responsibility. 
+
+We wrote this guide so that the moderation team can learn about the twists and turns being a moderator can be, and the Meower community can stay civil, and happy.
+
+Who does this apply to?
+These guidelines, as well as the normal Meower guidelines, apply to the Council, Managers, and the moderation part of Team Meower!
+
+NOTE:
+If you use the Svelte client, and just got promoted to moderator, but can’t find moderator actions, don’t panic. The Svelte client of Meower does not have moderation actions available yet. Please wait until they are added. 
+
+
+
+Moderation Level Guide
+
+There’s different levels of moderator permissions on Meower. You can check what level you are by going to https://api.meower.org/users/(username).
+
+The higher the level, the more permissions you have. Levels also get the permissions from the levels below it. 
+
+This moderator guide covers all permissions. You can see what permissions level a specific action on this guide is by using the seal.
+
+Level 1  
+Level 1 is for most beginner or volunteer moderators. These have the most basic tools. Labeled on Meower as “Low-level Moderator”
+- View and make decisions on reports
+- Delete home/chat posts
+- Send alerts
+- Kick and ban accounts
+- Suspend accounts from posting
+- Revoke suspensions
+- Accessing certain user data
+Level 2 
+Level 2 is for most of the people on the moderation part of Team Meower. Labeled on Meower as “Moderator”
+- Revoke account bans
+- View user IPs
+- View detailed IP information
+- Ban Ips
+- Pardon IPs
+
+Level 3 
+Level 3 is for most people on the Council. Labeled on Meower as “Moderator”
+- Terminate accounts
+- Reinstate deleted accounts
+- Delete bots
+- Delete webhooks
+- Delete oauth apps
+- Create announcements
+- Delete announcements
+
+
+
+
+Level 4 
+Level 4 is reserved for sysadmins like MikeDEV and Tnix. Labeled on Meower as “Administrator”
+- Enable repair mode
+- Promote/Demote people
+- Approve GDPR and COPPA deletion requests
+- Access to extra debugging features
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accessing User Data 
+
+Moderators can view:
+
+- Past revisions of user posts
+- Deleted user posts
+- Past alerts, blocks, and bans.
+- User IP Address
+- All users logged on to the same IP.
+Using certain user data for malicious purposes, such as tracing an IP, exposing an IP of a user, exposing alerts, blocks, or bans, may result in the following:
+
+- Moderation suspension 
+- Revoked moderator status
+- Account ban
+- Account termination
+
+
+To access user data, simply click on their profile.
+Then, click on “Moderate User”
+
+Then, scroll down to “Moderate IP”
+
+Here you can view IP information and depending on your level, block or pardon an IP.
+
+
+Account Termination 
+
+Terminating an account will disallow the user to log in. It will also delete the user’s account after 30 days.
+
+Terminations are very restricting. With a termination, a user won’t be able to log into their account and is be restricted from Meower-related services.
+
+Account deletion is also unrecoverable unless reinstated within the 30 day period.
+
+Terminating an account with no reason, or against another person due to a meower-unrelated issue, will result in 
+- Revoked moderator status
+- Account ban
+- Account termination
+To terminate an account, simply click on their profile
+
+Then click on “Moderate user”
+ 
+
+Scroll all the way down until you see “Terminate user”
+
+
+
+Click run. It will ask for confirmation.
+
+
+
+Click run.
+  
+
+Alerts 
+
+Alerts allow you to send a message directly to the alerted user’s inbox
+
+You can use an alert for specific reasons. A certain number of an alerts may result in the alert-receiving account to be kicked, blocked, or banned.
+
+Sending an alert for testing is allowed, but please limit this to your own account only.
+
+Please do not send an alert to a user as a joke. Alerts are made to be taken seriously.
+
+Please make alerts within reason. For example, if a user has a personal problem with you, do not alert them because of it. Please sort it out on your own without the use of moderation tools.
+
+Breaking alert guidelines may result in:
+- Revoke of the Alert permission
+- Revoke of Moderator status
+To send an alert to a user, click on their profile, and go to Moderator Actions.
+
+Click on “Alert User”
+
+
+
+Type in your alert. When you’re ready to send, press enter.
+
+
+
+It will ask for confirmation. Click run.
+
+
+
+After this, it should appear straight in the alerted user’s inbox!
+
+Announcements 
+
+Announcements send a message directly to every user’s inbox.
+
+Please only make announcements within reason. Do not test the function of the Announcements permission, as it sends to every user’s inbox.
+
+Please do not make joke announcements (outside of potential April 1st jokes, with permission from Council.)
+
+Please do not make announcements, to embarrass, humiliate, or cause harm to a user/s.
+
+Please make announcements within reason. Announcing things such as new features, or a Meower-related event are examples of what announcements should be.
+
+Breaking such guidelines may result in:
+- Revoke of the announcements permission
+- Level downgrade
+- Moderator suspension
+- Revoke of Moderator status
+- Account suspension
+To create an announcement, click on the gear icon in Home.
+
+Scroll all the way to the bottom and you’ll find “Create Announcement”
+
+
+
+Click run.
+
+Similar to the alert function, type in your desired announcement, and press enter, then click run when confirmation shows up.
+
+
+
+
+
+
+
+Bans, Blocks/Suspensions, and Kicks.
+
+Bans 
+Bans ban a user from logging into their account permanently, unless appealed and accepted.
+
+Bans are a huge responsibility. With a ban, a user won’t be able to log into their account and may be restricted from certain Meower-related services.
+
+Please ban within reason. Only ban a user if they have done something bannable. For example, if a user spammed once, please don’t immediately ban them.
+
+Banning without a reason said is not good, and will result in a moderator revoke, account suspension, or an account ban.
+
+Blocks/Suspensions 
+Blocks act as bans, but more of temporary bans. Blocks may also be referred to as suspensions.
+
+Suspensions are a huge responsibility as well as bans.
+Please only suspend an account within reason. 
+
+Please don’t make suspension times absurd, for example, don’t suspend an account for 100 years. If you want to permanently suspend an account, please ban them, don’t suspend them.
+
+Suspending without a reason will result in the same penalties mentioned in Bans.
+
+Kicks 
+Kicks log out a user.
+
+Please kick within reason. Don’t kick a user as a joke
+
+Don’t “spawnkill” either, in other words, don’t kick a user, and then immediately kick them again when they log back on.
+
+Breaking such guidelines may result in:
+- A revoke of the kicking permission
+- Level downgrade
+- Moderator suspension
+- Revoke of Moderator status
+All of these actions are available under “Moderate User” or on the user’s profile.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Clearing Home 
+
+The Homepage may only be cleared if –
+
+- A user or multiple users have spammed
+- A home raid occurred
+- A bot has malfunctioned or has been intended to spam
+Notice: Clearing the homepage will only clear the page you were on.
+
+Clearing a home page for no exact reason may result in a revoke of the clear homepage permission.
+
+If continued, moderator privileges may be revoked.
+
+To clear the latest page of home, go to the Moderate Panel
+
+
+From here, click run on the “Clear Home” command.
+
+
+
+It will ask for confirmation. Click run.
+
+And now you have cleared home!
+
+
+
+
+
+
+
+
+
+
+
+
+
+IP-related actions 
+
+As stated before, please do not use a user’s IP for malicious purposes, as IP’s can get an approximate location of a user’s location, and if used improperly, like “doxxing”, could result in up to one year in jail and a fine of up to $1,000*
+
+IP Pardon
+Pardoning an IP will remove an IP ban from a user.
+
+Please only pardon an IP if an IP ban was a mistake, or with permission from the council, or an agreed-upon majority vote.
+
+IP Pardoning without these prerequisites may result in a revoke of moderator status.
+
+IP Ban
+Banning an IP will revoke the viewing Meower, logging into accounts, creating accounts, and Meower-related/partnered permissions from a specific IP.
+
+Please IP ban within reason, and only IP ban with permission from certain members of council, or an agreed-upon majority vote. 
+
+IP banning without these prerequisites may result in a revoke of moderator status, account ban, account termination, IP pardon, or even an IP ban yourself.
+
+These are available under “Moderate IP” in “Moderate User”.
+
+When asked for confirmation, please make sure you have gone over these guidelines.
+
+
+*This refers to US law. Laws may be different for other countries.
+
+
+
+
+
+
+
+
+
+
+
+
+Report Queue 
+
+The Report Queue is a list of recent reports by users. 
+
+Please only take action of a report if necessary.
+
+To use the Report Queue, go the Moderate Panel in Home. then click run on “Report Queue”
+
+
+
+
+
+Press the  to close the report.
+This sends a message to the reporter’s inbox saying their report couldn’t be completed. 
+
+If the report is a post, press the  to delete the post.
+
+Profile reports can be resolved by using moderate user on their profile.
+
+
+	
+
