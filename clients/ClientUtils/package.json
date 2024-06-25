@@ -1,0 +1,22 @@
+{
+  "name": "@meower-media/clientutils",
+  "version": "1.0.0",
+  "repository": "https://github.com/meower-media-co/ClientUtils.git",
+  "author": "Meower",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@williamhorning/cloudlink": "^4.1.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publish": "tsc && npm publish --access public"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.3"
+  }
+}
