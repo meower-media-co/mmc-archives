@@ -1,0 +1,5 @@
+./.husky/*
+./scripts/*
+./node_modules/*
+./.svelte-kit/*
+./.mjs_version
